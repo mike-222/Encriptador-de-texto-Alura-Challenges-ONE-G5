@@ -6,28 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Textos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <div class="container">
-        <div class="encriptar">
-            <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingresar aqui el texto"></textarea>
+<div class="container">
+
+
+    <div class="col-izq">
+        <div class="text-encriptar">
+            <textarea   class="text-area" id="texto"   placeholder="Ingresa el texto aqui"></textarea>
         </div>
-        <div class="terminos">
-            <p>Solo letras minusculas y sin ascento!</p>
+
+        <div class="text-terminos">
+            <span class="material-symbols-outlined">
+                info
+            </span>
+            <p>Solo letras minusculas sin acentos</p>
         </div>
         <div class="botones">
             <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
             <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()">
         </div>
+
     </div>
-    <div class="encriptado">
-        <img src="" alt="" id="personaje">
-        <div class="mensaje-encriptado" id="mensaje-encriptado">
-            <h2 id="titulo-mensaje">Ningun mensaje encontrado</h2>
-            <p id="parrafo">Ingresar el texto a increptar o desincreptar</p>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+
+    <div class="col-derecha">
+        <div class="contenido">
+            <div class="logo">
+                <img src="img/muñeco.png" alt="" id="muñeco">
+            </div>
+            
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje">Ningun mensaje encontrado</h2>
+            </div>
+
+            <div class="caja-btn-copiar">
+                 <button class="btn-copiar" type="button" onclick="copiarAlPortapapeles();">COPIAR</button>
+            </div>
         </div>
+        
+        
+       
+
     </div>
+
+<!--
+        <div class="encriptar">
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
+        </div>
+        <div class="terminos">
+            <p>Solo letras minusculas sin acentos</p>
+        </div>
+        <div class="botones">
+            <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+            <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()">
+        </div>
+   
+    <div class="encriptado">
+        
+        
+       
+     </div>
+  </div>
+
+
+
+-->
+
+
+
+
+
+
+
 </body>
 <script src="index.js"></script>
 </html>
